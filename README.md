@@ -3,6 +3,7 @@
 javascript methods and functions:
 
 **Add Elements to an Array**
+
 .push() - adds to end of array and mutates it
 .unshift() - adds to beginning of an array and mutates it
 **Remove elements from an Array**
@@ -20,5 +21,29 @@ javascript methods and functions:
 .toReversed() - reverses the order of values in an array and returns a new array. Non-destructive
 .splice(start, deleteCount, item1, item2) - changes the contans of an array by removing or replacing existing element and/or adding new elements in place. Mutates orginal array
 .toSpliced(start, deleteCount, item1, item2) - non-descrutive version of splice
+
+**NESTED ARRAYS**
+
+```
+const starter = ['tomato', 'cream', 'basil']
+const main = ['lemon', 'thyme', 'chicken']
+const dessert = ['apple', 'pastry', 'cream']
+
+const dinner = [starter, main, dessert]
+
+console.log(dinner)
+/*
+[
+  ['tomato', 'cream', 'basil'],
+  ['lemon', 'thyme', 'chicken'],
+  ['apple', 'pastry', 'cream']
+]
+*/
+
+Access using
+
+const cream = dinner[0][1]
+```
+
 
 
