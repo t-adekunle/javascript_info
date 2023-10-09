@@ -47,6 +47,42 @@ Access using
 
 const cream = dinner[0][1]
 ```
+**IF STATMENTS**
+syntax: 
+```
+if (condition1) {
+  //  block of code to be executed if condition1 is true
+} else if (condition2) {
+  //  block of code to be executed if the condition1 is false and condition2 is true
+} else {
+  //  block of code to be executed if the condition1 is false and condition2 is false
+}
+```
+**FOR LOOPS**
 
+- Allows you to reapeat a code black until a condition evaluates true.
+- Syntax:
+```
+for (start; stop; step) {
+    // code to execute
+}
+```
+ Example:
+ ```
+for (let i = 0; i < 3; i++){
+console.log(i)
+}
+```
+ - let i = 0 ---> is the start expression. used to declare a variable before the loop begins. This is often counter. can be any letter but i is often used.
+ - i < 3 ---> is the stop expression. Before each repetition of the loop, this expression is evaluated to a boolean. If true, the loop will continue to iterate, if false then the loop will end.
+ - i++ ---. is the step expression. This code is evalusated at the end of each repetition. i++ means i = i +1. we reassign the calue of i to be itself plus one.
+ - **incraments**
+  - i-- decrrement by one
+  - i +=3 // eqiuvalent to i = i+3
+  - i -= 5 // equivalent to i = i - 5
+
+- Infinite loops - ion a for loops, if the stop expression can never evaluate to false, the loop will be infinite
+
+  
 
 
