@@ -171,4 +171,42 @@ geologyShop.purchaser = null
 
 console.log(geologyShop) // { owner: 'Flint Eastwood', purchaser: null }
 ```
+<h4>For...in Loops</h4>
 
+This section will outline the 
+object's alternative to for loops, the for...in loop.
+
+Components of a For In Loop
+A for...in loop loop can access each 
+property of an object by referencing its keys
+```
+const tree = {
+    name: "Oak",
+    hasAcorns: true,
+    ageInYears: 530,
+};
+
+for (const key in tree) { 
+    // code to be executed
+};
+```
+The syntax is similar to a for loop, but instead of having a counter 
+variable
+ (i) to work with inside the 
+code block
+, each key of the object is exposed. There are no stop or step 
+expressions
+ - the code block will be run as many times as there are properties in the object.
+
+Within the code block, we can use the key to 
+dynamically
+ access the values in the object. As key is a variable, we need to use square bracket notation.
+```
+for (const key in tree) { 
+    const value = tree[key]
+    console.log(`The tree has a key of ${key} holding the value ${value}`)
+    // The tree has a key of name holding the value Oak
+    // The tree has a key of hasAcorns holding the value true
+    // The tree has a key of ageInYears holding the value 530
+};
+```
