@@ -143,6 +143,32 @@ If we were to use dot notation we would be attempting to find a value in the obj
 undefined
 ```
 console.log(testScores.employee) // undefined
- ``` 
+ ```
+Changing our objects
+JavaScript provides the delete keyword to remove properties from an object. Our geology shop was for sale, but the purchase fell through, so we could delete this property.
+```
+const geologyShop = {
+    owner: 'Flint Eastwood'
+    purchaser: 'Stony Hawk'
+}
 
+delete geologyShop.purchaser
+
+console.log(geologyShop) // { owner: 'Flint Eastwood' }
+
+console.log(geologyShop.purchaser) // undefined
+```
+An alternative to deleting a property may be setting its value to null. We mentioned 
+null
+ right at the beginning of the course as a way of representing the lack of a value. Assigning null as a value is sometimes a more appropriate way of coding the data we want to represent. The remaining key can still give meaning to the object.
+```
+const geologyShop = {
+    owner: 'Flint Eastwood'
+    purchaser: 'Stony Hawk'
+}
+
+geologyShop.purchaser = null
+
+console.log(geologyShop) // { owner: 'Flint Eastwood', purchaser: null }
+```
 
