@@ -82,7 +82,67 @@ console.log(i)
   - i -= 5 // equivalent to i = i - 5
 
 - Infinite loops - ion a for loops, if the stop expression can never evaluate to false, the loop will be infinite
+- 
 
-  
+<h3>Objects</h3>
+- Like dictionaries in python.
+
+Accessing Values
+We can use dot notation to access individual values inside an object, using the 
+key
+ we are interested in learning more about. Let's check what Mezz's hobbies are.
+
+const person = {
+    firstName: 'Mezz',
+    lastName: 'Guster',
+    likesCoding: true,
+    hobbies: ['reading', 'pottery', 'cooking']
+}
+
+console.log(person.hobbies);
+// ['reading', 'pottery', 'cooking']
+If this looks familiar, we used exactly the same approach to query the .length property when we covered 
+arrays
+.
+
+Sometimes, the keys of an object prevent us from using this notation. In this example, the keys are the people's names, and the values are some imaginary test scores.
+```
+const testScores = {
+    "Leslie Knope": 85,
+    "Ron Swanson": 59,
+    "April Ludgate": 67
+}
+```
+All object keys are 
+strings
+ - in previous examples, we haven't included quotations marks, but here we must, because the names contains space 
+characters
+. Without quotation marks, JavaScript wouldn't run the code, but instead give us a 
+syntax
+ error.
+
+Accessing the value under a key like this with dot notation would also cause a syntax error. We can use bracket notation instead.
+```
+const aprilsScore = testScores["April Ludgate"]
+
+console.log(aprilsScore) // 67
+```
+Sometimes the key that we use to access the value might be stored in a 
+variable
+ - this is known as a dynamic key. Again, we must use bracket notation if we are to use the variable to access the value. JavaScript will 
+evaluate
+ the variable, and use it to access the correct value.
+```
+const employee = 'Ron Swanson'
+
+const ronsScore = testScores[employee]
+
+console.log(ronsScore) // 59
+```
+If we were to use dot notation we would be attempting to find a value in the object under that key. If that key does not exist on the object, then JavaScript will find no value, and the result will evaluate to 
+undefined
+```
+console.log(testScores.employee) // undefined
+ ``` 
 
 
