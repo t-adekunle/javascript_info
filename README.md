@@ -1,5 +1,14 @@
 # javascript_info
 
+**Maths symbols**
+
+Math.sqrt( number ); - finds square root of a number
+Math.pow(base, exponent) - calucaltes something to the power of. Only takes numbers
+** - used to create indicies. To the power of
+toFixed(x) - rounds number to x number of decimal places. returns a string
+Math.round(a*100)/100; - rounds number. /10 is one decimal place, /100 is 2 decimal places, /1000 is 3 decimal places, etc
+
+
 javascript methods and functions:
 
 **Add Elements to an Array**
