@@ -33,6 +33,12 @@ javascript methods and functions:
 - .toSpliced(start, deleteCount, item1, item2) - non-descrutive version of splice
 - .flat(depth) - creates a new array with all sub-array elements concatenated into it recursively up to the specified depth. Depth is optional and defaults to 1
 
+Sorting an Array 
+
+points.sort(function(a, b){return a - b}); - sorts ascending
+points.sort(function(a, b){return b - a}); - sorted desceneding
+
+
 
 **NESTED ARRAYS**
 
