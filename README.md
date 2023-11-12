@@ -11,6 +11,14 @@ Math.round(a*100)/100; - rounds number. /10 is one decimal place, /100 is 2 deci
 
 javascript methods and functions:
 
+
+<h4>STRINGS</h4>
+
+**Joining strings**
+let text1 = "Hello";
+let text2 = "world!";
+let result = text1.concat(" ", text2);
+
 **Add Elements to an Array**
 
 - .push() - adds to end of array and mutates it
