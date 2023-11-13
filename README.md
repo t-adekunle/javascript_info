@@ -21,6 +21,9 @@ let result = text1.concat(" ", text2);
 
 string.charAt(0).toUpperCase() + string.slice(1) - Capitalise the first letter of a string
 
+let text = "How are you doing today?";
+const myArray = text.split(" ") ---> changes a string to an array. " " uses the blank space to act as the separation factor
+
 **Add Elements to an Array**
 
 - .push() - adds to end of array and mutates it
