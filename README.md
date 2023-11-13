@@ -19,6 +19,8 @@ let text1 = "Hello";
 let text2 = "world!";
 let result = text1.concat(" ", text2);
 
+string.charAt(0).toUpperCase() + string.slice(1) - Capitalise the first letter of a string
+
 **Add Elements to an Array**
 
 - .push() - adds to end of array and mutates it
