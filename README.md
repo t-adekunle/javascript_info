@@ -25,6 +25,8 @@ let text = "How are you doing today?";
 const myArray = text.split(" ") ---> changes a string to an array. " " uses the blank space to act as the separation factor
 
 str.replace(value1, value2) - replaces first value with second value
+string.replace(/GeeksForGeeks/g, 'Gfg') - /g will replace globally so all occurance (case sensitive)
+string.replace(/GeeksForGeeks/gi, 'Gfg') - /i will replace regardless of case. If you put the slashes, then you don't need quotation marks
 
 **Add Elements to an Array**
 
