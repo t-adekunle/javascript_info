@@ -28,6 +28,22 @@ str.replace(value1, value2) - replaces first value with second value
 string.replace(/GeeksForGeeks/g, 'Gfg') - /g will replace globally so all occurance (case sensitive)
 string.replace(/GeeksForGeeks/gi, 'Gfg') - /i will replace regardless of case. If you put the slashes, then you don't need quotation marks
 
+string.includes(substring, index); - check if a string contrains a certain substrng. Index is optional
+
+Regex Matching:
+
+const str = 'Bread and Milk';
+console.log(/d/.test(str)); // true
+console.log(/p/.test(str)); // false
+
+const str = 'Bread and Milk';
+// Contains a digit?
+console.log(/\d/.test(str)); // false
+// Contains 'r', 'l' or 'c'?
+console.log(/[rlc]/.test(str)); // true
+// Contains whitespace?
+console.log(/\s/.test(str)); // true
+
 **Add Elements to an Array**
 
 - .push() - adds to end of array and mutates it
