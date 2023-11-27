@@ -66,6 +66,9 @@ console.log(/\s/.test(str)); // true
 - .toSpliced(start, deleteCount, item1, item2) - non-descrutive version of splice
 - .flat(depth) - creates a new array with all sub-array elements concatenated into it recursively up to the specified depth. Depth is optional and defaults to 1
 
+- **Combine arrays**
+arr1.concat(arr2)
+
 Sorting an Array 
 
 points.sort(function(a, b){return a - b}); - sorts ascending
