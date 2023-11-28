@@ -222,6 +222,31 @@ geologyShop.purchaser = null
 
 console.log(geologyShop) // { owner: 'Flint Eastwood', purchaser: null }
 ```
+
+**Turn Object keys into an array**
+
+```
+const object1 = {
+  a: 'somestring',
+  b: 42,
+  c: false,
+};
+
+console.log(Object.keys(object1));
+// Expected output: Array ["a", "b", "c"]
+```
+**Turn Object values into an array**
+
+```
+const object1 = {
+  a: 'somestring',
+  b: 42,
+  c: false,
+};
+
+console.log(Object.values(object1));
+// Expected output: Array ["somestring", 42, false]
+```
 <h4>For...in Loops</h4>
 
 This section will outline the 
