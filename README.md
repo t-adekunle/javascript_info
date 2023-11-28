@@ -64,7 +64,7 @@ console.log(/\s/.test(str)); // true
 - .toReversed() - reverses the order of values in an array and returns a new array. Non-destructive
 - .splice(start, deleteCount, item1, item2) - changes the contentsbn  of an array by removing or replacing existing element and/or adding new elements in place. Mutates orginal array
 - .toSpliced(start, deleteCount, item1, item2) - non-descrutive version of splice
-- .flat(depth) - creates a new array with all sub-array elements concatenated into it recursively up to the specified depth. Depth is optional and defaults to 1
+- .flat(depth) - creates a new array with all sub-array elements concatenated into it recursively up to the specified depth. Depth is optional and defaults to 1. Depth refers to the number of levels flattened not the final number of levels in the returned array
 
 - **Combine arrays**
 arr1.concat(arr2)
