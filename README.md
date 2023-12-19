@@ -290,3 +290,25 @@ for (const key in tree) {
 <h2> Javascript Functions</h2>
 
 array.join(separator) - can take an array and turn it into a string
+**map () method - instead of for loop** ---->
+```
+const array1 = [1, 4, 9, 16];
+
+// Pass a function to map
+const map1 = array1.map((x) => x * 2);
+
+console.log(map1);
+// Expected output: Array [2, 8, 18, 32]
+```
+
+**every() method - instead of for loop** ----> 
+
+```
+const isBelowThreshold = (currentValue) => currentValue < 40;
+
+const array1 = [1, 30, 39, 29, 10, 13];
+
+console.log(array1.every(isBelowThreshold));
+// Expected output: true
+```
+
