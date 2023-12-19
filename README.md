@@ -286,3 +286,7 @@ for (const key in tree) {
     // The tree has a key of ageInYears holding the value 530
 };
 ```
+
+<h2> Javascript Functions</h2>
+
+array.join(separator) - can take an array and turn it into a string
