@@ -109,6 +109,7 @@ if (condition1) {
   //  block of code to be executed if the condition1 is false and condition2 is false
 }
 ```
+<h2>Loops</h2>
 **FOR LOOPS**
 
 - Allows you to reapeat a code black until a condition evaluates true.
@@ -133,7 +134,75 @@ console.log(i)
   - i -= 5 // equivalent to i = i - 5
 
 - Infinite loops - ion a for loops, if the stop expression can never evaluate to false, the loop will be infinite
-- 
+
+**For ...in**
+
+```
+for (variable in object)
+  statment
+```
+EG - the function takes as its arguments object and the object's names. The it iterates over all the objects properties and returns a string that lists the property names and their values. 
+```
+function dumpProps(obj, objName) {
+  let result = "";
+  for (const i in obj) {
+    result += `${objName}.${i} = ${obj[i]}<br>`;
+  }
+  result += "<hr>";
+  return result;
+}
+```
+- To be used with objects.
+- The for...in statement iterates a specified avariable over all the enumarable properties of an object.
+- For each distinct property, JavaScript executes the specifieed statements.
+- Don't use with arrays as it will return the name of your user-defined properties in adition to the numeric indexes. 
+
+
+**For...of**
+
+- Created a loop interating over iterable objects (which include Array, Map, Set, arguments object) invoking a custom iteration hook with statemtns wto be executed for the calue of each distince property.
+
+- ```
+  for (variable of object)
+    statement
+  ```
+  - For ... in iterates over property names.
+  - For...of iterates over proprety values.
+```
+    const arr = [3, 5, 7];
+    arr.foo = "hello";
+
+  for (const i in arr) {
+    console.log(i);
+  }
+  // "0" "1" "2" "foo"
+
+  for (const i of arr) {
+    console.log(i);
+  }
+  // Logs: 3 5 7
+```
+- The for... of and for...in statments can also be used with destructuring (for info on destructuing see here:
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment - it makes it possible to unpack vcalues from arrays or properties from objetd, into distinct varibles.)
+- For instance, you can simultaneiously loop over the keys and values of an object using the Object.entries()
+```
+const obj = { foo: 1, bar: 2 };
+
+for (const [key, val] of Object.entries(obj)) {
+  console.log(key, val);
+}
+// "foo" 1
+// "bar" 2
+```
+**While**
+
+**Do While**
+
+**Labelled Statement**
+
+**Break Statement**
+
+**Continue Statement**
 
 <h3>Objects</h3>
 - Like dictionaries in python.
