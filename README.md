@@ -194,9 +194,23 @@ for (const [key, val] of Object.entries(obj)) {
 // "foo" 1
 // "bar" 2
 ```
-**While**
 
 **Do While**
+
+- The do...whle statement repeats until a specified condition evaluates to false.
+ ```
+  do
+  statement
+while (condition);
+```
+- statment is alwys executes once before the confistion is checked.
+-   To execute multiple statemnts use a black stament ({ }) to group those statemnts
+- If the condition ois trye, the tatemtns executes again.
+- At the end of every execution, the condition is checkes. When the con
+
+
+**While**
+
 
 **Labelled Statement**
 
