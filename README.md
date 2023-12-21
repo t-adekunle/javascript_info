@@ -316,4 +316,9 @@ function isSweetEnough(foods) {
   return foods.every(food => food.flavour === 'sweet');
 }
 ```
+<h2>Regular Expression or RegEx</h2>
+
+check this website for RegEX reference: https://regexr.com/
+
+
 
