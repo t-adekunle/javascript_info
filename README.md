@@ -206,17 +206,143 @@ while (condition);
 - statment is alwys executes once before the confistion is checked.
 -   To execute multiple statemnts use a black stament ({ }) to group those statemnts
 - If the condition ois trye, the tatemtns executes again.
-- At the end of every execution, the condition is checkes. When the con
+- At the end of every execution, the condition is checkes. When the condition is false, execetuion stops, and control passes to the statement following do..while
+- Example: here the do loop iterated at least once and iterated until ti is no longer less than 5.
+```
+let i = 0;
+do {
+  i += 1;
+  console.log(i);
+} while (i < 5);
+```
 
 
 **While**
+- A while statemtn executes its statements as long as a specified confition evaluates as true.
+- Syntax:
+```
+while (condition)
+  statement
+```
 
+- If the condition becomes falsee, the statemnt stops executing and control passes to the fstatement following the loop.
+- The confistion test occures _**before**_ statement in the loop is execeutes.
+- If the condition returns turem statement is executes and the condition is tested again. If the condition returns false, execution stops, and control is passed to the statement following while.
+- To execture multiple statemnts, use a block ststament ({ }) to group those statments
 
-**Labelled Statement**
+- Example: - here the while loop iterates as long as n is less than 3
+```
+let n = 0;
+let x = 0;
+while (n < 3) {
+  n++;
+  x += n;
+}
+```
+- with each iteration, the loop incraments n and adds that value top x. Therefor x and n take on the following values: first n = 1 and x = 1, then n = 2 and x = 3 and then n = 2 and x = 6.
+- After completeing the thirs pass, the confdition n < 3 is no longer true, so the loop terminates.
+- **Make sure to avoid infinite loops** - make sure that the condition in a loop eventually becomes flase. otherwise the loop will never terminate. 
+
+**Labeled Statement**
+
+- A label provides a statment with an identifier that lest you refer to it elsewhere is your program.
+-   eg you can use it to identify a loop and then use the break or continue stamenbts to indicate whether a program should iterrupt the loop or continue it's execution
+-   Syntax:
+  ```
+label:
+  statment
+```
+The value of label may be any JavasScript identifier that is not a reservedwords. The statement that you indetify with a label may be any statement. For examples of using labeled statemnts see the examples of break and continue below. 
 
 **Break Statement**
+- Use the break statement to terminate a loop, switch **(what is a switch???)**, or in conjunction with a labeled statement. 
+- When ytou uuse break without a label, it terminates the inntermost enclosing while, do-while, for or switch immediately and transfers control to the following statement.
+- When you use break with a lebel, it terminates the specified labeled statement.
+- Syntax:
+  ```
+  break;
+  break label;
+  ```
+- The first form of the syntax termiantes the innermost enclosing loop or switch,.
+- The second form of the synact terminates thje seocified enclosing labeled statement.
+- Example 1: The following example iterrates through the elements in an array until it finds the index odf the an element whose value is theValue:
+ ```
+  for (let i = 0; i < a.length; i++) {
+    if (a[i] === theValue) {
+      break;
+    }
+  }
+```
+Example 2: Breaking to a label:
+
+```
+let x = 0;
+let z = 0;
+labelCancelLoops: while (true) {
+  console.log("Outer loops:", x);
+  x += 1;
+  z = 1;
+  while (true) {
+    console.log("Inner loops:", z);
+    z += 1;
+    if (z === 10 && x === 10) {
+      break labelCancelLoops;
+    } else if (z === 10) {
+      break;
+    }
+  }
+}
+```
 
 **Continue Statement**
+
+- The continue statment can be used to **restart** a while, do-while for, or label statment
+-   When yhou use continue without a label, it terminates the current iteration of the innermost enclosing while, do-while, or for statments and contonies ecxeceution of the loop with the next iteration.
+-   In contrast to the break statement, continue does not termiate the execution of the loop entirely.
+-   In a while loop it jumps back to the condition.
+-   In a for loop, it jumps to the incrament expression.
+-   When you use continue with a label, it applies to the looping statment indetified with that label.
+-   Syntax:
+  ```
+continue;
+continue label;
+```
+- Example 1: - a while loop with a continue statment that executes when the value of i is 3. Thus, n takes on the values 1,3,7 and 12.
+```
+let i = 0;
+let n = 0;
+while (i < 5) {
+  i++;
+  if (i === 3) {
+    continue;
+  }
+  n += i;
+  console.log(n);
+}
+// Logs:
+// 1 3 7 12
+```
+- If y ou were to comment out the continue, the loop would run till the end and you would see 1,3,6,10,15
+- Example 2: - A statement labeled checkiandj contains a staement labeled checkj. If continue is encounteredm, the program terminates the current iteration of checkj and begins the next iuteration.  each time continue is encountered, checkj reiterates until its condition returns false. When false is returned, the remainder of the checkiandj statement is completed and che4ckiandj reiterated until it condition returs false. When false is returned, the program continues at the statemnt following checkiandj.
+- If continue ahad a label of checkiandj, the program would continue atr the top od the checkiandj statment.
+```
+let i = 0;
+let j = 10;
+checkiandj: while (i < 4) {
+  console.log(i);
+  i += 1;
+  checkj: while (j > 4) {
+    console.log(j);
+    j -= 1;
+    if (j % 2 === 0) {
+      continue checkj;
+    }
+    console.log(j, "is odd.");
+  }
+  console.log("i =", i);
+  console.log("j =", j);
+}
+```
 
 <h3>Objects</h3>
 - Like dictionaries in python.
