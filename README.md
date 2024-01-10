@@ -39,6 +39,7 @@ console.log(/p/.test(str)); // false
 const str = 'Bread and Milk';
 // Contains a digit?
 console.log(/\d/.test(str)); // false
+contains more than one digit ----> \d+
 // Contains 'r', 'l' or 'c'?
 console.log(/[rlc]/.test(str)); // true
 // Contains whitespace?
