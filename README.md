@@ -83,12 +83,12 @@ syntax - filter (callbackFn)
 filter(callbackFn, thisArg)
 
 - filter takes a function which will be unnamed and then this can be passed through with the arguments and the stateent that the callback funtion will execute. this needs to resolve to to a truthy to be captured by the tfilter and returned by the filter.
-- you must return something at the end 
+- you must return something at the end (implicit or explicit return)
 
 **Arr.map()**
 
 - creates a new array populated with the results of mapping the function onto all the elements in the array.
-- you must return something at the end 
+- you must return something at the end (implicit or explicit return)
 
 
 **NESTED ARRAYS**
