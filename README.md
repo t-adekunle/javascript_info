@@ -539,5 +539,9 @@ function isSweetEnough(foods) {
 
 check this website for RegEX reference: https://regexr.com/
 
+<h2>Arrow Syntax/ Arrow Function</h2>
+
+
+
 
 
