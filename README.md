@@ -82,7 +82,7 @@ points.sort(function(a, b){return b - a}); - sorted desceneding
 syntax - filter (callbackFn)
 filter(callbackFn, thisArg)
 
-- filter takes a function 
+- filter takes a function which will be unnamed and then this can be passed through with the arguments and the stateent that the callback funtion will execute. this needs to resolve to to a truthy to be captured by the tfilter and returned by the filter. 
 
 
 
