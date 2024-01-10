@@ -85,10 +85,32 @@ filter(callbackFn, thisArg)
 - filter takes a function which will be unnamed and then this can be passed through with the arguments and the stateent that the callback funtion will execute. this needs to resolve to to a truthy to be captured by the tfilter and returned by the filter.
 - you must return something at the end (implicit or explicit return)
 
+```
+const words = ['spray', 'elite', 'exuberant', 'destruction', 'present'];
+
+const result = words.filter((word) => word.length > 6);
+
+console.log(result);
+// Expected output: Array ["exuberant", "destruction", "present"]
+
+```
+
 **Arr.map()**
 
 - creates a new array populated with the results of mapping the function onto all the elements in the array.
 - you must return something at the end (implicit or explicit return)
+
+```
+  const array1 = [1, 4, 9, 16];
+
+// Pass a function to map
+const map1 = array1.map((x) => x * 2);
+
+console.log(map1);
+// Expected output: Array [2, 8, 18, 32]
+
+```
+
 
 
 **NESTED ARRAYS**
