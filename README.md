@@ -14,6 +14,8 @@ javascript methods and functions:
 
 <h4>STRINGS</h4>
 
+**Strings are Arrays and can be treated as such**
+
 **Joining strings**
 let text1 = "Hello";
 let text2 = "world!";
@@ -50,7 +52,7 @@ console.log(/\s/.test(str)); // true
 - .push() - adds to end of array and mutates it
 - .unshift() - adds to beginning of an array and mutates it
 
-**Remove elements from an Array**
+**Remove elements from an **
 
 - .pop() - removes last element from an array and mutates the array. Doesn't take an argument
 - .shift() - removed first element from an array and mutates it. DOesn't take an argument
@@ -74,6 +76,13 @@ Sorting an Array
 
 points.sort(function(a, b){return a - b}); - sorts ascending
 points.sort(function(a, b){return b - a}); - sorted desceneding
+
+**Arr.filter()**
+
+syntax - filter (callbackFn)
+filter(callbackFn, thisArg)
+
+- filter takes a function 
 
 
 
